@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Lapangan_Raffa Gallery – High-fidelity visual records of the Court Elite proving grounds. Precision engineered facilities for the modern athlete.">
+  <title>Lapangan_Raffa | Gallery – Documentation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" id="nav-logo-gallery">Lapangan_Raffa</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link" id="nav-home">HOME</a></li>
+        <li><a href="booking.html" class="nav-link" id="nav-booking">BOOKING</a></li>
+        <li><a href="gallery.html" class="nav-link active" id="nav-gallery">GALLERY</a></li>
+      </ul>
+      <a href="booking.html" class="btn-book" id="btn-book-nav">BOOK NOW</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="gallery-header" id="gallery-header">
+    <div class="container">
+      <h1 id="gallery-heading">DOCUMENTATION</h1>
+      <p id="gallery-subtext">High-fidelity visual records of the Court Elite proving grounds. Precision
+        engineered<br>facilities for the modern athlete.</p>
+    </div>
+  </section>
+
+  <section class="gallery-section" id="our-facilities">
+    <div class="container">
+      <div class="section-label" id="facilities-label">
+        <span class="label-bar"></span>
+        <h2>FASILITAS KAMI</h2>
+      </div>
+
+      <div class="facilities-grid" id="facilities-grid">
+        <div class="facility-main" id="facility-main">
+          <img src="assets/images/hero_court.png" alt="Pitch Alpha – Indoor futsal court">
+          <div class="facility-label" id="label-pitch-alpha">PITCH ALPHA</div>
+        </div>
+        <div class="facility-secondary" id="facility-secondary">
+          <div class="facility-sm" id="facility-lockers">
+            <img src="assets/images/facility_lockers.png" alt="Premium locker room">
+            <div class="facility-label" id="label-lockers">LOCKERS</div>
+          </div>
+          <div class="facility-sm" id="facility-equipment">
+            <img src="assets/images/facility_equipment.png" alt="Professional match equipment">
+            <div class="facility-label" id="label-equipment">EQUIPMENT</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-section" id="action-gallery">
+    <div class="container">
+      <div class="section-label" id="action-label">
+        <span class="label-bar"></span>
+        <h2>ACTION GALLERY</h2>
+      </div>
+
+      <div class="action-grid" id="action-grid">
+
+        <div class="action-item action-tall" id="action-1">
+          <img src="assets/images/gallery1.jpeg" alt="Player kicking ball in action">
+          <div class="action-overlay"></div>
+        </div>
+
+        <div class="action-item action-short" id="action-2">
+          <img src="assets/images/gallery2.jpeg" alt="Player standing under stadium lights">
+          <div class="action-overlay"></div>
+        </div>
+
+        <div class="action-item action-tall" id="action-3">
+          <img src="assets/images/gallery3.jpeg" alt="Player celebrating with arms spread wide">
+          <div class="action-overlay"></div>
+        </div>
+
+        <div class="action-item action-tall" id="action-4">
+          <img src="assets/images/gallery4.jpeg" alt="Two players competing for the ball">
+          <div class="action-overlay"></div>
+        </div>
+
+        <div class="action-item action-short" id="action-5">
+          <img src="assets/images/gallery5.jpeg" alt="Goalkeeper gloves close up">
+          <div class="action-overlay"></div>
+        </div>
+
+        <div class="action-item submit-media-card" id="submit-media">
+          <div class="submit-media-inner">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+              <circle cx="12" cy="13" r="4" />
+              <line x1="18" y1="5" x2="20" y2="5" />
+              <line x1="19" y1="4" x2="19" y2="6" />
+            </svg>
+            <h3>SUBMIT MEDIA</h3>
+            <p>Tag us in your match day documentation.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox" style="display:none;" role="dialog" aria-modal="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+  </div>
+
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-logo" id="footer-logo">Lapangan_Raffa</div>
+      <nav class="footer-nav" id="footer-nav">
+        <a href="#" id="footer-contact">CONTACT</a>
+        <a href="#" id="footer-terms">TERMS</a>
+        <a href="#" id="footer-privacy">PRIVACY</a>
+      </nav>
+      <p class="footer-copy" id="footer-copy">© 2026 Lapangan_Raffa. ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
