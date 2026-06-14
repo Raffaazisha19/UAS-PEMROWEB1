@@ -1,9 +1,3 @@
-/* ============================================================
-   COURT_ELITE – GLOBAL STYLESHEET
-   Dark luxury sports aesthetic
-   ============================================================ */
-
-/* ---- RESET & BASE ---- */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -45,9 +39,7 @@ button { cursor: pointer; border: none; background: none; }
   padding: 0 24px;
 }
 
-/* ============================================================
-   NAVBAR
-   ============================================================ */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -134,9 +126,7 @@ button { cursor: pointer; border: none; background: none; }
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ============================================================
-   SECTION LABELS
-   ============================================================ */
+
 .section-label {
   display: flex;
   align-items: center;
@@ -161,9 +151,7 @@ button { cursor: pointer; border: none; background: none; }
   flex-shrink: 0;
 }
 
-/* ============================================================
-   HERO – index.html
-   ============================================================ */
+
 .hero {
   position: relative;
   width: 100%;
@@ -247,9 +235,7 @@ button { cursor: pointer; border: none; background: none; }
   color: var(--white);
 }
 
-/* ============================================================
-   ELITE STANDARD – index.html
-   ============================================================ */
+
 .section-elite {
   padding: 80px 0;
   background: var(--bg);
@@ -343,9 +329,7 @@ button { cursor: pointer; border: none; background: none; }
   color: var(--white);
 }
 
-/* ============================================================
-   PLAYER VERDICTS – index.html
-   ============================================================ */
+
 .section-verdicts {
   padding: 80px 0;
   background: var(--bg-2);
@@ -444,9 +428,7 @@ button { cursor: pointer; border: none; background: none; }
   text-transform: uppercase;
 }
 
-/* ============================================================
-   BOOKING PAGE
-   ============================================================ */
+
 .booking-section {
   min-height: 100vh;
   display: flex;
@@ -611,9 +593,7 @@ button { cursor: pointer; border: none; background: none; }
   line-height: 1.7;
 }
 
-/* ============================================================
-   GALLERY PAGE
-   ============================================================ */
+
 .gallery-header {
   padding-top: calc(var(--nav-h) + 60px);
   padding-bottom: 48px;
@@ -794,10 +774,6 @@ button { cursor: pointer; border: none; background: none; }
 }
 
 
-
-/* ============================================================
-   FOOTER
-   ============================================================ */
 .footer {
   background: var(--bg);
   border-top: 1px solid var(--border);
