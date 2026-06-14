@@ -1,19 +1,7 @@
-/* ============================================================
-   COURT_ELITE JavaScript
-   - Navbar scroll behavior
-   - Hamburger menu
-   - Testimonial slider
-   - Booking form validation & modal
-   - Gallery lightbox
-   - Scroll animations
-   ============================================================ */
-
 (function () {
   'use strict';
 
 
-
-  /* ---- HAMBURGER MENU ---- */
   const hamburger = document.getElementById('hamburger');
   const navLinks  = document.getElementById('navLinks');
 
@@ -23,7 +11,6 @@
       navLinks.classList.toggle('open');
     });
 
-    // Close on link click
     navLinks.querySelectorAll('.nav-link').forEach(link => {
       link.addEventListener('click', () => {
         hamburger.classList.remove('open');
@@ -33,8 +20,6 @@
   }
 
 
-
-  /* ---- VERDICT SLIDER ---- */
   const slider  = document.getElementById('verdicts-slider');
   const btnPrev = document.getElementById('btn-prev-verdict');
   const btnNext = document.getElementById('btn-next-verdict');
@@ -45,7 +30,6 @@
 
     function showGroup(idx) {
       const total = cards.length;
-      // On desktop: show all 3. On mobile: show 1 at a time.
       const isMobile = window.innerWidth < 700;
       if (isMobile) {
         cards.forEach((c, i) => {
@@ -72,7 +56,6 @@
     window.addEventListener('resize', () => showGroup(activeIndex));
   }
 
-  /* ---- BOOKING FORM ---- */
   const bookingForm   = document.getElementById('booking-form');
   const modalOverlay  = document.getElementById('modal-overlay');
   const btnModalClose = document.getElementById('btn-modal-close');
@@ -86,7 +69,6 @@
       const time  = document.getElementById('booking-time');
       const court = document.getElementById('court-type');
 
-      // Simple validation
       let valid = true;
       [name, date, time, court].forEach(field => {
         if (!field) return;
@@ -117,7 +99,6 @@
     });
   }
 
-  /* ---- LIGHTBOX (gallery) ---- */
   const lightbox      = document.getElementById('lightbox');
   const lightboxImg   = document.getElementById('lightbox-img');
   const lightboxClose = document.getElementById('lightbox-close');
@@ -151,7 +132,6 @@
     });
   }
 
-  /* ---- ACTIVE NAV HIGHLIGHT ---- */
   (function setActiveNav() {
     const page = window.location.pathname.split('/').pop() || 'index.html';
     document.querySelectorAll('.nav-link').forEach(link => {
